@@ -1,0 +1,739 @@
+.textAria,
+.textAria2 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  transition-property: height;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .msjDiv {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .v-list {
+    width: auto;
+    background: unset;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: initial;
+  }
+  .v-list-item {
+    padding: 6px 10px;
+  }
+  .v-list-item-subtitle {
+    -webkit-line-clamp: unset;
+    margin: 3px 0px;
+  }
+  .v-list-item-title {
+    margin: 3px 0px;
+    font: 15px $font-main !important;
+    font-weight: 600 !important;
+    text-transform: inherit;
+    letter-spacing: 0;
+    white-space: normal;
+  }
+  .colorSecondary {
+    font-weight: 600 !important;
+    color: $fontBotBold !important;
+    span {
+      font-weight: 400 !important;
+      color: $fontBotPrimory !important;
+    }
+  }
+  .deliveryTime {
+    display: flex;
+    justify-content: flex-end;
+    font: 12px $font-main !important;
+    text-transform: inherit;
+    opacity: 0.5;
+    white-space: normal;
+    letter-spacing: 0;
+  }
+  .loading {
+    display: flex;
+    margin-right: auto;
+    margin-top: 10px;
+    .v-list-item-title {
+      color: $fontBotTyping;
+    }
+    .v-icon--size-default {
+      font-size: calc(var(--v-icon-size-multiplier) * 1.6em);
+    }
+  }
+  .botMsg {
+    background: $backgroundBotMsg;
+    margin: 10px 6px 0 6px;
+    max-width: 370px;
+    min-width: 50px;
+    display: flex;
+    margin-right: auto;
+    .v-list-item-title {
+      color: $fontBotPrimory;
+    }
+    .v-list-item-subtitle {
+      color: $fontBotPrimory;
+      font: 15px $font-main !important;
+      font-weight: 400 !important;
+      white-space: normal;
+      letter-spacing: 0;
+      opacity: 0.9;
+    }
+    p {
+      opacity: 0.8;
+      padding-bottom: 3px;
+    }
+    .v-divider {
+      padding: 4px;
+    }
+    .v-icon--size-default {
+      font-size: calc(var(--v-icon-size-multiplier) * 1.6em);
+    }
+    .deliveryTime {
+      color: $fontSecondary;
+    }
+    .daysClock {
+      color: $fontBotPrimory;
+      font-weight: 600 !important;
+      display: grid;
+      grid-template-columns: 110px repeat(1, 1fr);
+    }
+    .timeGrid {
+      display: grid;
+      grid-template-columns: 60px repeat(1, 1fr);
+    }
+  }
+  .myMsg {
+    margin: 10px 6px 0 6px;
+    max-width: 370px;
+    min-width: 50px;
+    display: flex;
+    margin-left: auto;
+    background: -webkit-linear-gradient(
+      33deg,
+      $myMsgGrad1,
+      $myMsgGrad2,
+      $myMsgGrad3
+    ) !important;
+    background: linear-gradient(
+      33deg,
+      $myMsgGrad1,
+      $myMsgGrad2,
+      $myMsgGrad3
+    ) !important;
+    .v-list-item-title {
+      color: $fontMyBold;
+    }
+    .v-list-item-subtitle {
+      color: $fontMyPrimory;
+      font: 14px $font-main !important;
+      font-weight: 400 !important;
+      text-transform: inherit;
+      letter-spacing: 0;
+      white-space: normal;
+      opacity: 0.9;
+    }
+    .deliveryTime {
+      color: $fontMyPrimory !important;
+    }
+  }
+  .botWidgets {
+    background: $backgroundBotMsg;
+    margin: 10px 6px 0 6px;
+    max-width: 370px;
+    min-width: 50px;
+    padding: 0;
+    display: flex;
+    .deliveryTime {
+      padding: 6px 10px 6px 0px;
+      color: $fontSecondary;
+    }
+    .v-list-item {
+      padding: 0;
+      margin: 0;
+    }
+    .v-list-item__content {
+      border-radius: 8px !important;
+    }
+    .calendar {
+      width: 370px;
+      padding: 12px;
+      .v-sheet {
+        width: 370px;
+      }
+      .v-date-picker-controls__month,
+      .v-date-picker-controls {
+        .v-btn {
+          color: $fontBotPrimory;
+        }
+      }
+      .v-picker-title {
+        display: none;
+      }
+      .v-date-picker-header {
+        padding-bottom: 0;
+        padding-inline: 16px 12px;
+      }
+      .v-date-picker-header__content {
+        font-size: 20px;
+      }
+      .v-picker__body {
+        width: 370px;
+      }
+      .v-date-picker-controls {
+        padding: 0;
+      }
+      .v-date-picker-month {
+        min-width: unset;
+        padding: 6px;
+        height: 212px;
+      }
+      .v-date-picker-months {
+        overflow-y: hidden;
+        height: 212px;
+      }
+      .v-date-picker-years {
+        height: 212px;
+        overflow-y: scroll;
+      }
+      .v-date-picker-years::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 3px 3px $fontBotBold !important;
+      }
+      .v-date-picker-month__day {
+        height: unset;
+        width: unset;
+      }
+      .v-date-picker-month__weekday {
+        font-size: 0.7rem;
+        color: $fontBotPrimory;
+      }
+      .v-date-picker-month__day .v-btn {
+        --v-btn-height: 15px;
+        --v-btn-size: 0.8rem;
+        transition-duration: unset;
+      }
+      .v-date-picker-month__days {
+        .v-btn {
+          color: $fontBotPrimory;
+          font: 14px $font-main !important;
+          font-weight: 500 !important;
+          white-space: normal;
+          text-transform: inherit;
+        }
+      }
+      .v-date-picker-years__content {
+        .v-btn {
+          color: $fontBotPrimory;
+          font: 15px $font-main !important;
+          font-weight: 500 !important;
+          white-space: normal;
+          text-transform: inherit;
+          letter-spacing: 0;
+        }
+      }
+      .v-date-picker-months__content {
+        padding: 6px;
+        .v-btn {
+          margin: auto;
+          width: auto;
+          padding-inline-start: 8px;
+          padding-inline-end: 8px;
+          height: 30px;
+          color: $fontBotPrimory;
+          font: 15px $font-main !important;
+          font-weight: 500 !important;
+          white-space: normal;
+          text-transform: inherit;
+          letter-spacing: 0;
+        }
+      }
+    }
+    .clock {
+      width: 370px;
+      transition-duration: unset;
+
+      .clockHeader {
+        background: $fontBotBold;
+        color: $fontBotTyping;
+        font: 20px $font-main !important;
+        padding-inline: 16px 12px;
+        display: grid;
+        grid-template-areas: 'prepend content append';
+        grid-template-columns: min-content minmax(0, 1fr) min-content;
+        div {
+          align-items: center;
+          display: inline-flex;
+          line-height: 40px;
+          grid-area: content;
+          justify-content: space-between;
+        }
+      }
+      .timeList {
+        .v-list-item__content {
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+          border-radius: unset !important;
+          width: 55px;
+        }
+        .time {
+          color: $fontBotPrimory;
+          font: 18px $font-main !important;
+          font-weight: 600 !important;
+          white-space: normal;
+          letter-spacing: 0;
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          align-items: baseline;
+          flex-direction: row;
+          gap: 3px;
+        }
+        .timeMiddle {
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          width: 10px;
+          font: 18px $font-main !important;
+          font-weight: 600 !important;
+        }
+        p {
+          font: 12px $font-main !important;
+        }
+      }
+      .v-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 16px;
+      }
+      .v-ripple__container {
+        color: $fontBotBold;
+      }
+      .v-list-item__content {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border-radius: unset !important;
+      }
+      .v-btn--icon.v-btn--density-default {
+        width: calc(var(--v-btn-height) + 0px);
+        height: calc(var(--v-btn-height) + 0px);
+        transition-duration: unset;
+      }
+      .v-input {
+        width: 338px;
+        max-height: 138px;
+        padding-top: 10px;
+      }
+      .v-field-label {
+        color: $fontBotPrimory;
+      }
+      .v-field__outline {
+        color: $fontBotBold;
+      }
+      .v-chip {
+        color: $fontBotPrimory;
+      }
+      .v-field__append-inner {
+        padding-top: unset;
+        .v-icon--size-default {
+          font-size: calc(var(--v-icon-size-multiplier) * 1.6em);
+          color: $fontBotPrimory;
+        }
+      }
+    }
+    .weather {
+      padding: 4px;
+      .v-row {
+        margin: 0;
+      }
+      .v-col {
+        padding: 6px;
+      }
+      .v-card {
+        width: 106px;
+        height: 70px;
+        transition-duration: unset;
+      }
+      .v-col:first-of-type .v-card {
+        width: 264px;
+        height: 110px;
+        transition-duration: unset;
+
+        .v-card-item {
+          padding: 5px 10px 5px 10px;
+        }
+        .v-card-title {
+          font: 18px $font-main !important;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $fontBotPrimory !important;
+          text-transform: inherit;
+          letter-spacing: 0;
+          white-space: normal;
+          .dateWeather {
+            font: 14px $font-main;
+            opacity: 0.9;
+          }
+        }
+        .weatherGrid {
+          display: grid;
+          grid-template-columns: 132px repeat(1, 1fr);
+          .v-list-item {
+            font: 32px $font-main;
+            color: $fontBotPrimory !important;
+            padding: 5px 10px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+          i {
+            height: 40px;
+          }
+
+          .infoWeather {
+            display: flex;
+            justify-content: space-around !important;
+            padding: 0px 10px 10px 10px;
+            font: 14px $font-main !important;
+            color: $fontBotPrimory !important;
+            text-transform: inherit;
+            letter-spacing: 0;
+            white-space: normal;
+            opacity: 0.8;
+            i {
+              height: unset;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .smallDateWeather {
+        .v-card-item {
+          padding: 3px !important;
+        }
+        .v-card-title {
+          font: 12px $font-main !important;
+          color: $fontBotPrimory !important;
+          display: flex;
+          justify-content: space-between;
+          opacity: 0.9;
+          padding: 0 11.8px;
+        }
+        .smallDays {
+          display: grid;
+          grid-template-columns: 50px repeat(1, 1fr);
+          .v-list-item {
+            font: 18px $font-main;
+            color: $fontBotPrimory !important;
+            text-transform: inherit;
+            letter-spacing: 0;
+            white-space: normal;
+            padding: 5px 10px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+          .v-icon--size-default {
+            font-size: calc(var(--v-icon-size-multiplier) * 1.8em);
+          }
+          i {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  .botOptions {
+    background: unset;
+    width: 382px;
+    min-width: 50px;
+    display: flex;
+    padding: 0;
+    .v-list-item--density-default {
+      min-height: 30px !important;
+      margin: 10px 6px 0 6px !important;
+    }
+    .v-btn {
+      color: $fontMyPrimory;
+      font: 14px $font-main !important;
+      font-weight: 400 !important;
+      white-space: normal;
+      text-transform: inherit;
+      letter-spacing: 0;
+      padding: 6px;
+      width: auto;
+      min-width: auto;
+      opacity: 0.8;
+      flex: 1 0;
+      justify-content: center;
+    }
+    .v-btn:hover {
+      opacity: 1;
+    }
+    .v-btn.v-btn--density-default {
+      height: unset;
+    }
+    .v-list-item-title {
+      color: $fontBotTyping;
+    }
+    .optionList {
+      width: 382px;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 191px repeat(1, 1fr);
+      .v-list-item__content {
+        display: flex;
+        justify-content: center;
+        flex: 1 0;
+      }
+      .v-list-item {
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+    }
+    .notification {
+      width: 320px;
+      display: flex;
+      padding: 0;
+      .v-list-item {
+        margin: 0;
+      }
+      .msgListItem {
+        background: $backgroundBotMsg;
+        .v-list-item__content {
+          margin-right: auto;
+          margin-left: unset;
+        }
+      }
+      .bntListItem {
+        padding: 0;
+        display: flex;
+        .v-list-item__content {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          flex: 1 0;
+          gap: 8px;
+        }
+      }
+      .v-list-item-title {
+        color: $fontBotPrimory;
+        white-space: normal;
+        letter-spacing: 0;
+      }
+      .v-list-item-subtitle {
+        color: $fontBotPrimory;
+        font: 15px $font-main !important;
+        font-weight: 400 !important;
+        white-space: normal;
+        letter-spacing: 0;
+        opacity: 1;
+      }
+      .v-icon--size-default {
+        font-size: calc(var(--v-icon-size-multiplier) * 1.6em);
+      }
+    }
+  }
+}
+.start {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  padding: 8px;
+  transition: unset;
+  background: $backgroundBotMsg;
+  .v-card-item {
+    padding: 0;
+  }
+  .v-card-title {
+    color: $fontBotPrimory;
+    font: 16px $font-main !important;
+    font-weight: 600 !important;
+    text-transform: inherit;
+    letter-spacing: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 3px;
+  }
+  .v-card-subtitle {
+    color: $fontSecondary;
+    font: 12px $font-main !important;
+    font-weight: 400;
+    text-transform: inherit;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    opacity: 0.9;
+  }
+  .v-icon--size-default {
+    font-size: calc(var(--v-icon-size-multiplier) * 1.6em);
+  }
+}
+.widgets {
+  width: 450px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: -webkit-linear-gradient(
+    180deg,
+    $panelGrad1,
+    $panelGrad2,
+    $panelGrad3
+  ) !important;
+  background: linear-gradient(
+    180deg,
+    $panelGrad1,
+    $panelGrad2,
+    $panelGrad3
+  ) !important;
+  .v-chip-group {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 80px;
+    padding: 8px 0px;
+  }
+  .v-chip {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 8px;
+    margin: 0 3px;
+    color: $fontBotPrimory;
+    font: 11px $font-main !important;
+    text-transform: inherit;
+    letter-spacing: 0;
+    background: $backgroundBotMsg;
+    width: 82px;
+  }
+  .v-chip__content {
+    opacity: 0.9;
+  }
+  .v-chip__prepend {
+    margin-bottom: 4px;
+  }
+  .v-icon {
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+  }
+  .v-icon--size-default {
+    font-size: calc(var(--v-icon-size-multiplier) * 2.5em);
+  }
+}
+#gradient {
+  background: -webkit-linear-gradient(
+    280deg,
+    $gradient1,
+    $gradient2,
+    $gradient3,
+    $gradient4,
+    $gradient5,
+    $gradient6
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    280deg,
+    $gradient1,
+    $gradient2,
+    $gradient3,
+    $gradient4,
+    $gradient5,
+    $gradient6
+  ) !important;
+}
+.weatherTooltip {
+  background: -webkit-linear-gradient(
+    360deg,
+    $myMsgGrad1,
+    $myMsgGrad1,
+    $myMsgGrad2,
+    $myMsgGrad2,
+    $myMsgGrad3,
+    $myMsgGrad3
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    360deg,
+    $myMsgGrad1,
+    $myMsgGrad1,
+    $myMsgGrad2,
+    $myMsgGrad2,
+    $myMsgGrad3,
+    $myMsgGrad3
+  ) !important;
+  color: $fontBotTyping !important;
+}
+.v-combobox__content {
+  .v-list {
+    padding: 4px;
+  }
+  .v-ripple__container {
+    color: $fontBotBold;
+  }
+  .v-list-item__overlay {
+    background-color: $backgroundBotMsg !important;
+  }
+  .v-list-item {
+    min-height: 30px !important;
+    padding: 0;
+  }
+  .v-list-item-title {
+    color: $fontBotPrimory;
+    font: 14px $font-main !important;
+    font-weight: 400 !important;
+    white-space: normal;
+    letter-spacing: 0;
+  }
+  .v-selection-control--density-default {
+    --v-selection-control-size: 30px;
+  }
+  .v-icon--size-default {
+    font-size: calc(var(--v-icon-size-multiplier) * 1.2em);
+    color: $fontBotBold;
+  }
+}
+.textAria2::-webkit-scrollbar-thumb {
+  display: none !important;
+  transition: 450ms;
+}
+.chatbot::-webkit-scrollbar {
+  width: 0 !important;
+}
+.v-combobox__content .v-list::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px 3px $fontBotBold !important;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  transition-property: width;
+  transition: 450ms;
+}
+::-webkit-scrollbar-track {
+  background-color: unset;
+  border-radius: 15px;
+  box-shadow: inset 0 0 9px 9px unset;
+  border: solid 3px transparent;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px 3px $scrollColor;
+  border: solid 3px transparent;
+  border-radius: 15px;
+  background-color: unset;
+  transition: 450ms;
+}
+::-webkit-scrollbar-thumb:hover {
+  border: solid 2px transparent;
+}

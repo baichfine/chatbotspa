@@ -1,0 +1,39 @@
+<template>
+  <i>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="v-icon__svg"
+      viewBox="0 0 24 24"
+    >
+      <g fill="url(#my-close-gradient)">
+        <path
+          d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+        />
+      </g>
+      <linearGradient
+        id="my-close-gradient"
+        x1="0"
+        y1="10%"
+        x2="90%"
+        y2="1"
+      >
+        <stop
+          offset="0%"
+          stop-color="#616161"
+        />
+        <stop
+          offset="40%"
+          stop-color="#616161"
+        />
+        <stop
+          offset="75%"
+          stop-color="#424242"
+        />
+        <stop
+          offset="100%"
+          stop-color="#424242"
+        />
+      </linearGradient>
+    </svg>
+  </i>
+</template>

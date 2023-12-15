@@ -1,0 +1,39 @@
+<template>
+  <i>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="v-icon__svg"
+      viewBox="0 0 24 24"
+    >
+      <g fill="url(#my-chevron-gradient)">
+        <path
+          d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+        />
+      </g>
+      <linearGradient
+        id="my-chevron-gradient"
+        x1="0"
+        y1="10%"
+        x2="90%"
+        y2="1"
+      >
+        <stop
+          offset="0%"
+          stop-color="#66BB6A"
+        />
+        <stop
+          offset="40%"
+          stop-color="#66BB6A"
+        />
+        <stop
+          offset="75%"
+          stop-color="#388E3C"
+        />
+        <stop
+          offset="100%"
+          stop-color="#388E3C"
+        />
+      </linearGradient>
+    </svg>
+  </i>
+</template>

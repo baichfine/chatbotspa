@@ -1,0 +1,28 @@
+<template>
+  <svg>
+    <linearGradient
+      id="my-cool-gradient"
+      x1="0"
+      y1="10%"
+      x2="90%"
+      y2="1"
+    >
+      <stop
+        offset="0%"
+        stop-color="#ff8e6e"
+      />
+      <stop
+        offset="40%"
+        stop-color="#ff8e6e"
+      />
+      <stop
+        offset="75%"
+        stop-color="#ffbb91"
+      />
+      <stop
+        offset="100%"
+        stop-color="#ffbb91"
+      />
+    </linearGradient>
+  </svg>
+</template>

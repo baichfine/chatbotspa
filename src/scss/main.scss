@@ -1,0 +1,11 @@
+@use 'vuetify/settings' with (
+  $button-height: 40px,
+  // $utilities: false,
+  // $color-pack: false
+);
+
+@import 'vuetify/styles';
+@import './base/variables';
+@import './base/AppChatBot';
+@import './base/reset';
+@import './base/_Messages';

@@ -1,0 +1,43 @@
+$fontBotBold: rgb(var(--v-theme-fontBotBold));
+$fontBotPrimory: rgb(var(--v-theme-fontBotPrimory));
+$fontBotTyping: rgb(var(--v-theme-fontBotTyping));
+$backgroundBotMsg: rgb(var(--v-theme-backgroundBotMsg));
+
+$backgroundMain: rgb(var(--v-theme-backgroundMain));
+$fontSecondary: rgb(var(--v-theme-fontSecondary));
+$fontMyBold: rgb(var(--v-theme-fontMyBold));
+$fontMyPrimory: rgb(var(--v-theme-fontMyPrimory));
+$scrollColor: rgb(var(--v-theme-scrollColor));
+$colorOutline: rgb(var(--v-theme-colorOutline));
+
+$myMsgGrad1: rgb(var(--v-theme-myMsgGrad1));
+$myMsgGrad2: rgb(var(--v-theme-myMsgGrad2));
+$myMsgGrad3: rgb(var(--v-theme-myMsgGrad3));
+
+$panelGrad1: rgb(var(--v-theme-panelGrad1));
+$panelGrad2: rgb(var(--v-theme-panelGrad2));
+$panelGrad3: rgb(var(--v-theme-panelGrad3));
+
+$gradient1: RGB(var(--v-theme-gradient1));
+$gradient2: RGB(var(--v-theme-gradient2));
+$gradient3: RGB(var(--v-theme-gradient3));
+$gradient4: RGB(var(--v-theme-gradient4));
+$gradient5: RGB(var(--v-theme-gradient5));
+$gradient6: RGB(var(--v-theme-gradient6));
+
+@font-face {
+  font-family: 'YS Text Regular Regular';
+  src: url('https://db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.eot');
+  src: url('https://db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.woff')
+      format('woff'),
+    url('https://db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.ttf')
+      format('truetype'),
+    url('https://db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.svg#YS Text Regular Regular')
+      format('svg');
+}
+
+$font-main: YS Text Regular Regular, Arial, Helvetica, sans-serif;

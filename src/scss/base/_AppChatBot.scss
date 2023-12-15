@@ -1,0 +1,100 @@
+.chatbot {
+  display: flex;
+  margin: auto;
+  background-color: $backgroundMain;
+  height: 932px;
+  justify-content: center;
+}
+.chat {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.settings {
+  width: 450px;
+  height: 40px;
+  background: $panelGrad3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  .v-btn {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .v-btn--icon.v-btn--density-default {
+    width: calc(var(--v-btn-height) + 0px);
+    height: calc(var(--v-btn-height) + 0px);
+  }
+  .v-icon {
+    display: block;
+  }
+}
+.chatField {
+  width: 450px;
+  background: -webkit-linear-gradient(
+    360deg,
+    $panelGrad1,
+    $panelGrad2,
+    $panelGrad3
+  ) !important;
+  background: linear-gradient(
+    360deg,
+    $panelGrad1,
+    $panelGrad2,
+    $panelGrad3
+  ) !important;
+  .v-text-field input {
+    font: 16px $font-main !important;
+    color: $fontBotPrimory !important;
+    font-weight: 500 !important;
+    text-transform: inherit;
+    letter-spacing: 0;
+  }
+  .v-label {
+    font-family: $font-main !important;
+    color: $fontSecondary !important;
+    font-weight: 400 !important;
+    text-transform: inherit;
+    letter-spacing: 0;
+    opacity: 0.7 !important;
+  }
+  .v-field__overlay {
+    background-color: unset !important;
+    transition: 450ms;
+  }
+  .v-field__outline {
+    color: $colorOutline !important;
+  }
+  .v-field__clearable {
+    color: $fontSecondary;
+  }
+  .v-field__append-inner i {
+    color: $fontBotPrimory !important;
+    opacity: 1;
+  }
+  .v-field__append-inner i:hover,
+  .v-field__clearable:hover,
+  .v-field__prepend-inner i:hover {
+    opacity: 0.8;
+  }
+  .v-field__prepend-inner {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .v-field__prepend-inner i {
+    color: $fontBotPrimory !important;
+    opacity: 1;
+  }
+  .v-field__clearable {
+    margin-inline-end: 10px;
+  }
+  .v-field--appended {
+    padding-inline-end: 0px;
+  }
+  .v-field--prepended {
+    padding-inline-start: 0px;
+  }
+}
