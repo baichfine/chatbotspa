@@ -26,7 +26,7 @@
           @click="message.my.openWidgets"
         ></v-icon>
         <Tooltip
-          :text="message.my.stWidgets ? 'Закрыть виджиты' : 'Открыть виджиты'"
+          :text="message.my.stWidgets ? 'Закрыть виджеты' : 'Открыть виджеты'"
         ></Tooltip>
       </template>
     </v-text-field>
