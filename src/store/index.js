@@ -140,7 +140,7 @@ export default createStore({
       state.stDialog = false
       state.stBotBusy = true
       state.valCalendar = new Date()
-      state.valHour = 3
+      state.valHour = 7
       state.valMinute = 30
       state.valDays = ['Понедельник']
       state.stTheme = theme
