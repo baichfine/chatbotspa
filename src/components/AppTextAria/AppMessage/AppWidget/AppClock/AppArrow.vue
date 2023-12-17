@@ -7,7 +7,7 @@
     ></v-btn>
     <span class="time"
       >{{ textAria.msg.showTime(time) }}
-      <p>ч</p></span
+      <p>{{ unit }}</p></span
     >
 
     <v-btn
@@ -22,5 +22,6 @@
 defineProps({
   time: String,
   textAria: Object,
+  unit: String,
 })
 </script>

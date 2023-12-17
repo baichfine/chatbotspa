@@ -3,6 +3,7 @@
     <Arrow
       :textAria="textAria"
       time="hour"
+      unit="ч"
     ></Arrow>
     <v-list-item class="timeMiddle">
       <span>:</span>
@@ -10,6 +11,7 @@
     <Arrow
       :textAria="textAria"
       time="minute"
+      unit="м"
     ></Arrow>
   </v-list>
 </template>
